@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Lister</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div id="logo">
+      <span>Todo Lister</span>
+    </div>
+    <div id="subtitle">
+      <span>A School of Code Project.</span>
+    </div>
+  </header>
+
+  <div id="container">
+    <div id="inputArea">
+      <input type="text" id="" class="form-control" placeholder="Add your todo ...">
+      <button class="btn btn-success">Add Todo</button>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alertBox">
+      <strong>Warning Duplicate Detected!</strong> You have already entered that one!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <ul id="todoList">
+
+    </ul>
+    <button id="clearAll" class="btn btn-danger btn-block">Clear Todo List</button>
+  </div>
+  
+  <!-- <button id='clearBtn'>Clear finished tasks</button> -->
+  <footer>
+    Coded by James Bowler &copy; 2020
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
